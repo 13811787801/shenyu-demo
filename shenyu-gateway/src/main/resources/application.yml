@@ -20,4 +20,4 @@ shenyu:
     nacos:
       url: ${spring.cloud.nacos.server-addr}
       # url: 配置成你的 nacos地址，集群环境请使用（,）分隔。
-      namespace: 1c10d748-af86-43b9-8265-75f487d20c6c
+      namespace: sync-data
