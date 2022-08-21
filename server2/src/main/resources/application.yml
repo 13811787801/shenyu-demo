@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+    discovery:
+      enabled: true
+  main:
+    #允许覆盖bean
+    allow-bean-definition-overriding: true
+  codec:
+    #编码器缓存限制
+    max-in-memory-size: 2MB
+  application:
+    name: server2
+
+shenyu:
+  register:
+    registerType: nacos #zookeeper #etcd #nacos #consul
+    serverLists: ${spring.cloud.nacos.server-addr} #localhost:2181 #http://localhost:2379 #localhost:8848
+    props:
+      nacosNameSpace: ShenyuRegisterCenter
+  client:
+    springCloud:
+      props:
+        contextPath: /server2
