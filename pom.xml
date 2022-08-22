@@ -20,6 +20,7 @@
         <module>server1</module>
         <module>server2</module>
         <module>shenyu-gateway</module>
+       <module>shenyu-admin</module>
     </modules>
 
     <dependencies>
