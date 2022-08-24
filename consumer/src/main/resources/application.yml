@@ -14,7 +14,7 @@ spring:
     #编码器缓存限制
     max-in-memory-size: 2MB
   application:
-    name: server2
+    name: consumer
 
 shenyu:
   register:
@@ -25,4 +25,4 @@ shenyu:
   client:
     springCloud:
       props:
-        contextPath: /server2
+        contextPath: /consumer

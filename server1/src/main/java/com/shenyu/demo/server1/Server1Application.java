@@ -1,4 +1,4 @@
-package com.shenyu.demo.server2;
+package com.shenyu.demo.server1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
